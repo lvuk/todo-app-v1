@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+mongoose.connect("mongodb+srv://admin:admin@cluster0.hymhv.mongodb.net/todolistDB", {
   useNewUrlParser: true
 }, (err) => {
   if(err) console.log(err)
